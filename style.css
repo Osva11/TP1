@@ -8,44 +8,43 @@ body {
 }
 
 header {
-
-    padding: 20px;
-    background-color: #101010;
-    color: #ffffff;
+    background-size: cover;
+    background-position: center ;
     border-bottom: 1px solid #ddd;
+}
+.nav {
+    background-color: #101010;
+    display: flex;
     align-items: center;
-    display:flex;
     justify-content: space-between;
-    align-items: flex-end;
-}
-
-header p {
-    margin: 0;
-    font-size: 2.5em;
+    padding: 25px;
 
 }
-
-
-nav ul {
-    text-align:right;
+.logo{
+    font-size: 25px;
+    color: #98FAEC;
+    font-weight: 100;
+}
+.menu{
+    display: flex;
+}
+.menu li{
     list-style: none;
-    padding: 0;
-    margin:  0;
+    margin:10px;
 }
-
-nav ul li {
-    display: inline-block;
-    margin: 0 20px;
-}
-
-nav ul li a {
+.menu li a{
     color: #ffffff;
-    text-decoration: none;
-    font-size: 1.2em;
+    text-decoration:none;
+    font-weight: bold;
+    transition: all 0.5s ease;
+
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+.menu li a:hover {
+    padding: 5px 10px;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
 }
 
 /* Estilos para la sección principal */
@@ -63,8 +62,6 @@ nav ul li a:hover {
     margin-bottom: 20px;
     text-align: center;
     
-
-
 }
 .Imagen-Texto
 {
@@ -86,6 +83,7 @@ nav ul li a:hover {
     margin-top: 20px;
     border-radius: 50%;
     text-align: center;
+    border: 2px solid #98FAEC;;
 }
 
 
@@ -110,7 +108,7 @@ section {
 .Recuadro_titulo{
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .Texto_sobre_mi{
@@ -118,36 +116,197 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 80px;
+    gap: 60px;
+    margin-top: 60px;
 }
 
 .Texto_sobre_mi p{
-    width: 50%;
+    width: 40%;
     background-color: #101010;
     border-radius: 30px;
     text-align: center;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border: 2px solid #98FAEC;
+
 }
+.Texto_sobre_mi img {
+
+    border-radius: 20px;
+    border-color: 1px solid #98FAEC;;
 
 
-
-
-
+}
 
 section h2{
     font-size: 1.8em;
-    margin-bottom: 20px;
     color: #12F7D6;
     background-color: #101010;
+    border-radius: 15px;
+    border: 2px solid #12F7D6;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+
 }
 
-section p, section ul li {
+section p{
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #ddd;
+}
+section ul li  h3{
+    color: #98FAEC ;
+    font-size: 1.5em;
+    text-align: center;
+}
+section ul li  strong {
+    font-size: 1.3em;
+    color: #ddd;
+}
+section ul li  p{
     font-size: 1.1em;
     line-height: 1.6;
     color: #ddd;
 }
 
+/*segunda seccioón*/
+.Experiencia_laboral {
+    background-image: url(./Imagenes/Imagen-fondo-exp.jpg);
+    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen dentro del contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 1400px; /* Ajusta según sea necesario */
+}
+
+.Fondo_gris {
+    background-color: rgba(0, 0, 0, 0.726);
+    border-radius: 7px;
+    border:1px solid #98FAEC;
+    margin: 70px;
+    padding: 20px;
+}
+.Titulo_secundario{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Formato_texto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.Formato_texto p{
+    width: 50%;
+    text-align: center;
+}
+
+.Formato_texto img{
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+}
+/*3ra sección*/
+.Formato_texto_proyectos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 100px;
+
+}
+.Formato_texto_proyectos p {
+    width: 50%;
+    text-align: justify;
+}
+
+.Formato_texto_proyectos img {
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+/*Formato formulario*/
+/* Estilos generales del formulario */
+#Contacto {
+    padding: 50px 20px;
+    background-color: #101010; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#Contacto h2 {
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    color: #12F7D6;
+    text-align: center;
+}
+
+/* Estilos del formulario */
+form {
+    width: 100%;
+    max-width: 700px; /* Ancho máximo del formulario */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre los elementos del formulario */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
+}
+
+/* Estilos de los campos del formulario */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #98FAEC;
+    background-color: #1e1e1e; /* Fondo oscuro para los inputs */
+    color: #ffffff;
+    font-size: 1em;
+    resize: vertical; /* Permite ajustar el tamaño vertical de textarea */
+}
+
+form textarea {
+    height: 150px; /* Altura inicial del textarea */
+}
+
+/* Estilos del botón de envío */
+form button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #12F7D6;
+    color: #101010;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0ea8a0; /* Color de fondo al pasar el cursor */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+
+}
+
+
+
 /* Estilos para el footer */
-footer {
+footer{
+
     text-align: center;
     padding: 20px;
     background-color: #101010;

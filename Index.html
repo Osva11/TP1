@@ -5,27 +5,27 @@
     <title>Mi portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title> Menu Scrool</title>
 </head>
 
 <body>
     <header>
-        <p>Osvaldo Barcos</p>
-        <nav>
-            <ul>
+        <nav class="nav">
+            <div class="logo">Osvaldo Barcos </div>
+            <ul class ="menu">
                 <li><a href="#Sobre-mi">Sobre mi </a></li>
                 <li><a href="#Experiencia-Laboral">Experiencia Laboral</a></li>
                 <li><a href="#Proyectos">Proyectos</a></li>
                 <li><a href="#Contacto">Contacto</a></li>
             </ul>
         </nav>
-
     </header>
 
   
     <section class="main">
         <h1>Bienvenido a Mi Portafolio</h1>
         <div class="Imagen-Texto">
-            <img src="C:\Users\osval\Documents\Universidad\Desarrollo de Software TP1\Imagenes\2e7ac3ac-fe18-4ecf-8f2b-6c10915977b7.jpg" alt="Mi foto de perfil" width="300">
+            <img src="./Imagenes/2e7ac3ac-fe18-4ecf-8f2b-6c10915977b7.jpg" alt="Mi foto de perfil" width="300">
             <p>Hola, soy Osvaldo Barcos, estudiante avanzado en Ingeniería en Sistemas. Explora mis proyectos, experiencias y más sobre mí a través de las secciones a continuación</p>
         </div>
     </section>
@@ -34,44 +34,69 @@
         <div class="Recuadro_titulo">
             <h2>Sobre Mí</h2>
         </div>
-        <div class="Texto_sobre_mi">
-            <p> Estudiante avanzado de ingeniería en Sistemas de la UTN San Francisco. Apasionado por el desarrollo de Software y la inteligencia Artificial,
-                a lo largo de mi formación he adquirido conocimientos y experiencia en programación, diseño de sistemas, bases de datos y metodologías ágiles.
-                Me encanta resolver problemas complejos y crear soluciones eficientes. En este portfolio encontraras mis proyectos y mi información de contacto.
-            </p>
-            <img src="C:\Users\osval\Documents\Universidad\DesarrolloSoftware\TP1\Imagenes\backend-4496461_1280.png" alt="Imagen de codigo" width="200">
-        </div>
+            <div class="Texto_sobre_mi">
+                <p> Estudiante avanzado de ingeniería en Sistemas de la UTN San Francisco. Apasionado por el desarrollo de Software y la inteligencia Artificial,
+                    a lo largo de mi formación he adquirido conocimientos y experiencia en programación, diseño de sistemas, bases de datos y metodologías ágiles.
+                    Me encanta resolver problemas complejos y crear soluciones eficientes. En este portfolio encontraras mis proyectos y mi información de contacto.
+                </p>
+                <img src="./Imagenes/backend-4496461_1280.png" alt="Imagen de codigo" width="200">
+            </div>
+        
     </section>
 
-    <section id="Experiencia-Laboral">
+    <section class="Experiencia_laboral" id="Experiencia-Laboral" >
+       
         <div class="Recuadro_titulo">
             <h2>Experiencia Laboral</h2>
         </div>
+        <ul>
+            <li>
+                <div class="Fondo_gris">
+                    <div class="Titulo_secundario"> 
+                        <h3>Tech Solutions</h3>
+                    </div>
+                    <div class="Formato_texto"> 
+                        <strong>Fecha: Junio 2022 - Diciembre 2022</strong>
+                        <p>
+                        Trabajé como desarrollador web en Tech Solutions, donde me encargué del diseño y desarrollo de sitios web interactivos utilizando HTML, CSS y JavaScript.
+                        Colaboré con el equipo de diseño para implementar interfaces amigables y responsivas, optimizando la velocidad de carga y mejorando la experiencia del usuario.
+                        Participé en la integración de APIs y en la implementación de funcionalidades dinámicas para varios clientes.
+                        </p>
+                    </div>
+                </div>
+            </li>
 
-    <ul>
-        <li>
-            Tech Solutions
-            Fecha: Junio 2022 - Diciembre 2022
-            Descripción:Trabajé como desarrollador web en Tech Solutions, donde me encargué del diseño y desarrollo de sitios web interactivos utilizando HTML, CSS y JavaScript.
-            Colaboré con el equipo de diseño para implementar interfaces amigables y responsivas, optimizando la velocidad de carga y mejorando la experiencia del usuario.
-            Participé en la integración de APIs y en la implementación de funcionalidades dinámicas para varios clientes.
-        </li>
-        <li>
-            Pasantia en Innovatech
-            Fecha: Enero 2023 - Junio 2023
-            Descripción: Durante mi pasantía en Innovatech, participé en el desarrollo de aplicaciones móviles usando Flutter y Dart.
-            Fui responsable de escribir código eficiente y realizar pruebas unitarias para asegurar la calidad del software.
-            También asistí en la depuración de problemas y en la implementación de nuevas características basadas en los requisitos del cliente.
-        </li>
-        <li>
-            Miembro de GISAI-Grupo de Investigación Sobre Aplicaciones Inteligentes
-            Julio 2023 - Presente
-            Descripción:GISAI es un grupo inter-disciplinario que cuenta con estudiantes, graduados y docentes de las carreras de Ing. en Sistemas de Información, Electrónica,
-            Electromecánica y Química,con el objetivo de estudiar, desarrollar e implementar herramientas inteligentes que permitan mejoras representativas en distintas empresas
-            de nuestra región.
-        </li>
+            <li>
+                <div class="Fondo_gris">
+                    <div class="Titulo_secundario">
+                        <h3>Pasantia en Innovatech</h3>
+                    </div>
+                    <div class="Formato_texto"> 
+                        <strong>Fecha: Enero 2023 - Junio 2023</strong>
+                        <p>Durante mi pasantía en Innovatech, participé en el desarrollo de aplicaciones móviles usando Flutter y Dart.
+                        Fui responsable de escribir código eficiente y realizar pruebas unitarias para asegurar la calidad del software.
+                        También asistí en la depuración de problemas y en la implementación de nuevas características basadas en los requisitos del cliente.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="Fondo_gris">
+                    <div class ="Titulo_secundario">
+                        <h3>Miembro de GISAI-Grupo de Investigación Sobre Aplicaciones Inteligentes</h3>
+                    </div>
+                    <div class ="Formato_texto">
+                        <strong>Julio 2023 - Presente</strong>
+                        <p>
+                            Descripción:GISAI es un grupo inter-disciplinario que cuenta con estudiantes, graduados y docentes de las carreras de Ing. en Sistemas de Información, Electrónica,
+                            Electromecánica y Química,con el objetivo de estudiar, desarrollar e implementar herramientas inteligentes que permitan mejoras representativas en distintas empresas
+                            de nuestra región.
+                        </p>
+                    </div>
+                </div>
+            </li>
 
-    </ul>
+        </ul>
+ 
     </section>
     
     <section id="Proyectos">
@@ -80,27 +105,57 @@
         </div>
         <ul>
             <li>
-                Sistema de Contador de Personas en el Superdomo
-                Descripción: Actualmente, formo parte de un grupo de investigación en inteligencia artificial que está desarrollando un sistema avanzado de detección y seguimiento de personas
-                para el Superdom0 de nuestra ciudad. El objetivo es contar el número de personas que ingresan y salen del recinto en tiempo real,
-                utilizando cámaras de video instaladas en los puntos de entrada y salida.</li>
-            <li>
-                Sistema de Gestión de Inventarios para Pequeñas Empresas
-                Descripción: Desarrollé un sistema de gestión de inventarios destinado a pequeñas empresas que buscan una solución accesible y eficiente para controlar su stock.
-                La aplicación, construida con tecnologías web como HTML, CSS y JavaScript para el frontend, y Node.js con Express para el backend, permite a los usuarios gestionar productos,
-                realizar seguimientos de entradas y salidas de inventario, y generar informes de stock.
+                <div class="Fondo_gris">
+                    <div class="Titulo_secundario">
+                        <h3>Visión Artifical</h3>
+                    </div>
+                    <div class="Formato_texto_proyectos">
+                        <img src="./Imagenes/Image2021-11-02_13-56-23_924079-560x374.jpeg">
+                        <p>Descripción: Actualmente, formo parte de un grupo de investigación en inteligencia artificial que está desarrollando un sistema avanzado de detección y seguimiento de personas
+                        para el Superdom0 de nuestra ciudad. El objetivo es contar el número de personas que ingresan y salen del recinto en tiempo real,
+                        utilizando cámaras de video instaladas en los puntos de entrada y salida.
+                        </p>
+                        
+                    </div>
+                    
+                </div>
             </li>
             <li>
-                Plataforma de Reserva de Espacios en Línea
-                Descripción: Desarrollé una plataforma en línea para la reserva de espacios en eventos y reuniones, diseñada para facilitar la gestión y reserva de espacios en centros de conferencias, salas de reuniones y espacios de eventos.
-                 La aplicación está construida con tecnologías web modernas, utilizando Angular para el frontend y Ruby on Rails para el backend.
+                <div class="Fondo_gris">
+                    <div class="Titulo_secundario">
+                        <h3>Sistema de Gestión de Inventarios para Pequeñas Empresas</h3>
+                    </div>
+                    <div class="Formato_texto_proyectos">
+                        <img src="./Imagenes/inventory-management-refers-to-the-process-of-ordering-and-storing-to-sell-the-company-inventory-vector.jpg">
+                        <p>
+                            Descripción: Desarrollé un sistema de gestión de inventarios destinado a pequeñas empresas que buscan una solución accesible y eficiente para controlar su stock.
+                            La aplicación, construida con tecnologías web como HTML, CSS y JavaScript para el frontend, y Node.js con Express para el backend, permite a los usuarios gestionar productos,
+                            realizar seguimientos de entradas y salidas de inventario, y generar informes de stock.
+                        </p>
+                        
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="Fondo_gris">
+                    <div class="Titulo_secundario">
+                        <h3>Plataforma de Reserva de Espacios en Línea
+                    </div>
+                    <div class="Formato_texto_proyectos">
+                        <img src="./Imagenes/event.jpg">
+                        <p>
+                        Desarrollé una plataforma en línea para la reserva de espacios en eventos y reuniones, diseñada para facilitar la gestión y reserva de espacios en centros de conferencias, salas de reuniones y espacios de eventos.
+                        La aplicación está construida con tecnologías web modernas, utilizando Angular para el frontend y Ruby on Rails para el backend.
+                        </p>
+                    </div>
+                </div>
             </li>
         </ul>
     </section>
 
     <section id="Contacto">
         <div class="Recuadro_titulo">
-            <h4> Formulario de contacto</h4>
+            <h2> Formulario de contacto</h2>
         </div>
         <form action="https://formspree.io/f/xqaznaqy" method="POST">
             <input type="text" name="nombre" placeholder="Nombre Completo" required>
@@ -111,7 +166,7 @@
         </form>        
     </section>
 
-    <footer>
+<footer>
         <div class="Redes-Sociales"> 
             <ul>
                 <li><a href="https://www.linkedin.com/in/tu-perfil" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
