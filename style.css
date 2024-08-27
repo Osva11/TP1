@@ -8,26 +8,34 @@ body {
 }
 
 header {
-    text-align: center;
+
     padding: 20px;
-    background-color: #000000;
+    background-color: #101010;
     color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
-header h1 {
+header p {
     margin: 0;
     font-size: 2.5em;
+
 }
 
+
 nav ul {
+    text-align:right;
     list-style: none;
     padding: 0;
-    margin: 20px 0;
+    margin:  0;
 }
 
 nav ul li {
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
@@ -41,46 +49,108 @@ nav ul li a:hover {
 }
 
 /* Estilos para la sección principal */
-.main {
-    text-align: center;
-    padding: 50px 20px;
-}
 
-.main h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
+.main {
+    padding: 50px 20px;
+    margin : 0 auto;
+    
+}
+.main h1
+{
+
+    font-size: 2.5em;
+    color:#98FAEC;
+    margin-bottom: 20px;
+    text-align: center;
+    
+
+
+}
+.Imagen-Texto
+{
+    margin : 0 auto;
+    max-width: 1000px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px; 
 }
 
 .main p {
     font-size: 1.2em;
+    color:#ffffff;
+
 }
 
 .main img {
     margin-top: 20px;
     border-radius: 50%;
+    text-align: center;
+}
+
+
+.Sobre_mi{
+    background-image: url(./Imagenes/4019300.jpg);
+    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen dentro del contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 600px; /* Ajusta según sea necesario */
+    width:auto /* Ajusta según sea necesario */
 }
 
 /* Estilos para secciones */
 section {
     padding: 50px 20px;
     border-bottom: 1px solid #ddd;
+    background-color: #101010;
+
 }
 
-section h2, section h3, section h4 {
+
+.Recuadro_titulo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.Texto_sobre_mi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.Texto_sobre_mi p{
+    width: 50%;
+    background-color: #101010;
+    border-radius: 30px;
+    text-align: center;
+}
+
+
+
+
+
+
+section h2{
     font-size: 1.8em;
     margin-bottom: 20px;
+    color: #12F7D6;
+    background-color: #101010;
 }
 
 section p, section ul li {
     font-size: 1.1em;
     line-height: 1.6;
+    color: #ddd;
 }
 
 /* Estilos para el footer */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #000000;
+    background-color: #101010;
     color: #ffffff;
 }
 

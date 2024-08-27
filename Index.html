@@ -6,35 +6,48 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
+
 <body>
     <header>
-        <h1>Osvaldo Barcos</h1>
+        <p>Osvaldo Barcos</p>
         <nav>
             <ul>
-                <li><a href="Sobre_mi">Sobre mi </a></li>
-                <li><a href="Experiencia Laboral">Experiencia Laboral</a></li>
-                <li><a href="Proyectos">Proyectos</a></li>
-                <li><a href="Contacto">Contacto</a></li>
+                <li><a href="#Sobre-mi">Sobre mi </a></li>
+                <li><a href="#Experiencia-Laboral">Experiencia Laboral</a></li>
+                <li><a href="#Proyectos">Proyectos</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
             </ul>
         </nav>
 
     </header>
 
+  
     <section class="main">
         <h1>Bienvenido a Mi Portafolio</h1>
-        <p>Hola, soy Osvaldo Barcos, estudiante avanzado en Ingeniería en Sistemas. Explora mis proyectos, experiencias y más sobre mí a través de las secciones a continuación</p>
-        <img src="C:\Users\osval\Downloads\2e7ac3ac-fe18-4ecf-8f2b-6c10915977b7.jpg" alt="Mi foto de perfil" width="300">
+        <div class="Imagen-Texto">
+            <img src="C:\Users\osval\Documents\Universidad\Desarrollo de Software TP1\Imagenes\2e7ac3ac-fe18-4ecf-8f2b-6c10915977b7.jpg" alt="Mi foto de perfil" width="300">
+            <p>Hola, soy Osvaldo Barcos, estudiante avanzado en Ingeniería en Sistemas. Explora mis proyectos, experiencias y más sobre mí a través de las secciones a continuación</p>
+        </div>
     </section>
 
-    <section id="Sobre_mi">
-        <h2>Sobre Mí</h2>
-        <p>Estudiante avanzado de ingeniería en Sistemas de la UTN San Francisco. Apasionado por el desarrollo de Software y la inteligencia Artificial,
-        a lo largo de mi formación he adquirido conocimientos y experiencia en programación, diseño de sistemas, bases de datos y metodologías ágiles.
-        Me encanta resolver problemas complejos y crear soluciones eficientes. En este portfolio encontraras mis proyectos y mi información de contacto. </p> 
+    <section class="Sobre_mi" id="Sobre-mi">
+        <div class="Recuadro_titulo">
+            <h2>Sobre Mí</h2>
+        </div>
+        <div class="Texto_sobre_mi">
+            <p> Estudiante avanzado de ingeniería en Sistemas de la UTN San Francisco. Apasionado por el desarrollo de Software y la inteligencia Artificial,
+                a lo largo de mi formación he adquirido conocimientos y experiencia en programación, diseño de sistemas, bases de datos y metodologías ágiles.
+                Me encanta resolver problemas complejos y crear soluciones eficientes. En este portfolio encontraras mis proyectos y mi información de contacto.
+            </p>
+            <img src="C:\Users\osval\Documents\Universidad\DesarrolloSoftware\TP1\Imagenes\backend-4496461_1280.png" alt="Imagen de codigo" width="200">
+        </div>
     </section>
 
-    <section id="Experiencia Laboral">
-    <h3>Experiencia Laboral</h3>
+    <section id="Experiencia-Laboral">
+        <div class="Recuadro_titulo">
+            <h2>Experiencia Laboral</h2>
+        </div>
+
     <ul>
         <li>
             Tech Solutions
@@ -62,7 +75,9 @@
     </section>
     
     <section id="Proyectos">
-        <h3>Proyectos</h3>
+        <div class="Recuadro_titulo">
+            <h2>Proyectos</h2>
+        </div>
         <ul>
             <li>
                 Sistema de Contador de Personas en el Superdomo
@@ -84,7 +99,9 @@
     </section>
 
     <section id="Contacto">
-        <h4> Formulario de contacto</h4>
+        <div class="Recuadro_titulo">
+            <h4> Formulario de contacto</h4>
+        </div>
         <form action="https://formspree.io/f/xqaznaqy" method="POST">
             <input type="text" name="nombre" placeholder="Nombre Completo" required>
             <input type="email" name="email" placeholder="Correo Electrónico" required>
@@ -95,7 +112,7 @@
     </section>
 
     <footer>
-        <div class="Redes Sociales"> 
+        <div class="Redes-Sociales"> 
             <ul>
                 <li><a href="https://www.linkedin.com/in/tu-perfil" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
                 <li><a href="https://github.com/tu-perfil" target="_blank" title="GitHub"></a><i class="bi bi-github"></i></li>

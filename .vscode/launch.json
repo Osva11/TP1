@@ -5,17 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Attach to Edge",
-            "port": 9222,
-            "request": "attach",
-            "type": "msedge",
-            "webRoot": "${workspaceFolder}"
-        },
-        {
             "type": "msedge",
             "request": "launch",
             "name": "Open Index.html",
-            "file": "c:\\Users\\osval\\Documents\\Universidad\\Desarrollo de Software\\TP1\\Index.html"
+            "file": "c:\\Users\\osval\\Documents\\Universidad\\DesarrolloSoftware\\TP1\\Index.html"
         }
     ]
 }
