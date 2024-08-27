@@ -1,4 +1,12 @@
 /* Estilos generales */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #ffffff;
@@ -10,7 +18,6 @@ body {
 header {
     background-size: cover;
     background-position: center ;
-    border-bottom: 1px solid #ddd;
 }
 .nav {
     background-color: #101010;
@@ -37,6 +44,7 @@ header {
     text-decoration:none;
     font-weight: bold;
     transition: all 0.5s ease;
+    font-size: 20px;
 
 }
 
@@ -52,12 +60,13 @@ header {
 .main {
     padding: 50px 20px;
     margin : 0 auto;
-    
 }
 .main h1
 {
-
-    font-size: 2.5em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 1.8em;
     color:#98FAEC;
     margin-bottom: 20px;
     text-align: center;
@@ -76,6 +85,9 @@ header {
 .main p {
     font-size: 1.2em;
     color:#ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 
 }
 
@@ -88,11 +100,11 @@ header {
 
 
 .Sobre_mi{
-    background-image: url(./Imagenes/4019300.jpg);
+    background-image: url(../Imagenes/4019300.jpg);
     background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
     background-position: center; /* Centra la imagen dentro del contenedor */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
-    height: 600px; /* Ajusta según sea necesario */
+    height: 700px; /* Ajusta según sea necesario */
     width:auto /* Ajusta según sea necesario */
 }
 
@@ -128,6 +140,9 @@ section {
     padding: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     border: 2px solid #98FAEC;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 
 }
 .Texto_sobre_mi img {
@@ -148,32 +163,47 @@ section h2{
     font-size: 24px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     padding: 10px 20px;
-
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 section p{
     font-size: 1.1em;
     line-height: 1.6;
     color: #ddd;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 section ul li  h3{
     color: #98FAEC ;
     font-size: 1.5em;
     text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
 }
 section ul li  strong {
     font-size: 1.3em;
     color: #ddd;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+
 }
 section ul li  p{
-    font-size: 1.1em;
-    line-height: 1.6;
-    color: #ddd;
+    font-size: 1.2em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+
 }
 
 /*segunda seccioón*/
 .Experiencia_laboral {
-    background-image: url(./Imagenes/Imagen-fondo-exp.jpg);
+    background-image: url(../Imagenes/Imagen-fondo-exp.jpg);
     background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
     background-position: center; /* Centra la imagen dentro del contenedor */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
@@ -305,30 +335,30 @@ form button:hover {
 
 
 /* Estilos para el footer */
-footer{
 
-    text-align: center;
-    padding: 20px;
+
+.Redes_sociales{
+    display: flex;
+    justify-content:center;
     background-color: #101010;
-    color: #ffffff;
+    padding: 20px;
+    gap: 100px;
 }
 
-footer ul {
+.Redes_sociales li{
     list-style: none;
+    margin: 0;
     padding: 0;
 }
-
-footer ul li {
-    display: inline-block;
-    margin: 0 15px;
+.Redes_sociales li a{
+    font-size: 24px;
+    color: white;
+    transition: all 0.5s ease;
 }
 
-footer ul li a {
-    color: #ffffff;
-    font-size: 1.5em;
-    text-decoration: none;
-}
-
-footer ul li a:hover {
-    color: #dddddd;
+.Redes_sociales li a:hover {
+    padding: 5px 10px;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
 }
